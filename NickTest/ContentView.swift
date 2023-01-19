@@ -6,14 +6,24 @@
 //
 
 import SwiftUI
+//import MagicSDK
 
 struct ContentView: View {
+    
+    var downsampleToScreenScale = true
+    let url = URL(string: "")!
+    
+    var test: String {
+        let cacheKey = String(url.absoluteString) + "_\(downsampleToScreenScale)"
+        return cacheKey
+    }
+    
     var body: some View {
         VStack {
             Image(systemName: "globe")
                 .imageScale(.large)
                 .foregroundColor(.accentColor)
-            Text("Hello, world!")
+            Text("Hello, world!" + String())
         }
         .padding()
     }
