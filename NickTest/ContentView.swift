@@ -6,15 +6,25 @@
 //
 
 import SwiftUI
-//import MagicSDK
+import MagicSDK
 
 struct ContentView: View {
     
-    var downsampleToScreenScale = true
-    let url = URL(string: "")!
+    var someBool = true
+    let url = URL(string: "https://google.com")!
+    
+    /*
+     Error appears to be caused by the Web3 lib
+     extension String: Web3BytesConvertible {
+
+        public init(_ bytes: Bytes) {
+            self = bytes.makeString()
+        }
+     }
+     */
     
     var test: String {
-        let cacheKey = String(url.absoluteString) + "_\(downsampleToScreenScale)"
+        let cacheKey = String(url.absoluteString) + "_\(someBool)"
         return cacheKey
     }
     

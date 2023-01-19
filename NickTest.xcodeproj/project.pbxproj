@@ -11,6 +11,7 @@
 		01234BF12979B4EE00D7F2D9 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01234BF02979B4EE00D7F2D9 /* ContentView.swift */; };
 		01234BF32979B4EE00D7F2D9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 01234BF22979B4EE00D7F2D9 /* Assets.xcassets */; };
 		01234BF72979B4EE00D7F2D9 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 01234BF62979B4EE00D7F2D9 /* Preview Assets.xcassets */; };
+		019A13422979D6B500A4A329 /* MagicSDK in Frameworks */ = {isa = PBXBuildFile; productRef = 019A13412979D6B500A4A329 /* MagicSDK */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,6 +28,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				019A13422979D6B500A4A329 /* MagicSDK in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -85,6 +87,9 @@
 			dependencies = (
 			);
 			name = NickTest;
+			packageProductDependencies = (
+				019A13412979D6B500A4A329 /* MagicSDK */,
+			);
 			productName = NickTest;
 			productReference = 01234BEB2979B4EE00D7F2D9 /* NickTest.app */;
 			productType = "com.apple.product-type.application";
@@ -113,6 +118,9 @@
 				Base,
 			);
 			mainGroup = 01234BE22979B4EE00D7F2D9;
+			packageReferences = (
+				019A13402979D6B500A4A329 /* XCRemoteSwiftPackageReference "magic-ios" */,
+			);
 			productRefGroup = 01234BEC2979B4EE00D7F2D9 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -350,6 +358,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		019A13402979D6B500A4A329 /* XCRemoteSwiftPackageReference "magic-ios" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/magiclabs/magic-ios.git";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		019A13412979D6B500A4A329 /* MagicSDK */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 019A13402979D6B500A4A329 /* XCRemoteSwiftPackageReference "magic-ios" */;
+			productName = MagicSDK;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 01234BE32979B4EE00D7F2D9 /* Project object */;
 }
