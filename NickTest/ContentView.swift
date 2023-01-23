@@ -6,7 +6,7 @@
 //
 
 import SwiftUI
-import MagicSDK
+//import MagicSDK //Uncomment this to see the build error
 
 struct ContentView: View {
     
